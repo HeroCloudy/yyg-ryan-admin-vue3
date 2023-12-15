@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>%VITE_APP_TITLE%</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%VITE_APP_TITLE%</title>
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .welcome {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #e2eae2;
+    }
+
+    .welcome .loading-container {
+    }
+
+    .welcome .loading-container .loader {
+      --s: 10px;
+      width: calc(16 * var(--s));
+      height: calc(16 * var(--s));
+      border-radius: 50%;
+      display: grid;
+      -webkit-mask: radial-gradient(50% 50%,
+      #0000 calc(99% - 2 * var(--s)),
+      #000 calc(100% - 2 * var(--s))
+      );
+      animation: spin 2s linear infinite;
+    }
+
+    .welcome .loading-container .loader::before {
+      content: '';
+      background: conic-gradient(
+        from 25deg,
+        #d6fdfb 25%,
+        #aed7cc 0 50%,
+        #39d3ec 0 75%,
+        #389a45 0
+      );
+      -webkit-mask: repeating-conic-gradient(#0000 0 25deg, #000 23% 25%), radial-gradient(var(--s) at var(--s) 50%, #000 97%, #0000) left/calc(100% - 2 * var(--s)) 100% repeat-x, radial-gradient(var(--s) at 50% var(--s), #000 97%, #0000) top/100% calc(100% - 2 * var(--s)) repeat-y;
+    }
+
+    .welcome .app-title {
+      color: #389a45;
+      margin-top: 40px;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(1turn);
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="welcome">
+    <div class="loading-container">
+      <div class="loader"></div>
+    </div>
+    <div class="app-title">%VITE_APP_TITLE%, Welcome!</div>
+  </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>
