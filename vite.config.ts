@@ -7,6 +7,7 @@ import eslint from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  envDir: './env',
   plugins: [vue(), vueJsx(), eslint()],
   resolve: {
     alias: {
