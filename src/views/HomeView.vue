@@ -20,8 +20,13 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
     <div>
       <h2>Icon Demo</h2>
-      <yyg-icon icon="beisi" class="h-10 w-10 color-blue"></yyg-icon>
-      <yyg-icon icon="jita" class="h-10 w-10 color-blue"></yyg-icon>
+      <h4>svg</h4>
+      <yyg-icon type="svg" icon="beisi" class="h-10 w-10 color-blue"></yyg-icon>
+      <yyg-icon type="svg" icon="jita" class="h-10 w-10 color-blue"></yyg-icon>
+
+      <h4>iconfont</h4>
+      <yyg-icon type="iconfont" icon="gu" class="text-red text-2xl!"></yyg-icon>
+      <yyg-icon type="iconfont" icon="cha" class="text-sky text-4xl!"></yyg-icon>
     </div>
   </main>
 </template>
