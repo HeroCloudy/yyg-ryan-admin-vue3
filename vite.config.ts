@@ -15,7 +15,12 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 export default defineConfig({
   envDir: './env',
   plugins: [
-    vue(),
+    vue({
+      script: {
+        defineModel: true,
+        propsDestructure: true
+      }
+    }),
     vueJsx(),
     eslint(),
     UnoCSS(),

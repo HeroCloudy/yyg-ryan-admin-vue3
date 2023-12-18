@@ -13,6 +13,11 @@ const constantRoutes: RouteRecordRaw[] = [
     path: '/about',
     name: 'about',
     component: () => import('../views/AboutView.vue')
+  },
+  {
+    path: '/demo-icon-list',
+    name: 'demo-icon-list',
+    component: () => import('@/views/icon-list-demo.vue')
   }
 ]
 
