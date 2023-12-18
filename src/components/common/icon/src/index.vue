@@ -5,24 +5,27 @@
  @time: 2023/12/18 11:40
 -->
 <template>
-  <span v-if="type === 'iconify'"></span>
+  <span v-if="type === 'uno'" :class="icon"></span>
 
-  <svg aria-hidden="true" v-else-if="type === 'svg'">
+  <Icon v-else-if="type === 'iconify'" :icon="icon"></Icon>
+
+  <svg v-else-if="type === 'svg'" aria-hidden="true">
     <use :href="symbolId" :fill="color" />
   </svg>
 
-  <i v-else-if="type === 'iconfont'" :class="className"></i>
+  <i v-else-if="type === 'iconfont'" :class="iconfontClass"></i>
 </template>
 
 <script setup lang="ts">
 import type { IconProps } from './types'
+import { Icon } from '@iconify/vue'
 
 defineOptions({
   name: 'icon'
 })
 
 const props = withDefaults(defineProps<IconProps>(), {
-  type: 'iconify',
+  type: 'uno',
   prefix: 'icon',
   color: 'currentColor',
   fontFamily: 'iconfont'
@@ -43,7 +46,7 @@ onBeforeMount(() => {
 
 const symbolId = computed(() => `#${props.prefix}-${props.icon}`)
 
-const className = computed(() => `${props.fontFamily} ${props.prefix}-${props.icon}`)
+const iconfontClass = computed(() => `${props.fontFamily} ${props.prefix}-${props.icon}`)
 </script>
 
 <style scoped>

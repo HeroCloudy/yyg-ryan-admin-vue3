@@ -20,6 +20,18 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
     <div>
       <h2>Icon Demo</h2>
+
+      <h4>Uno</h4>
+      <yyg-icon type="uno" icon="i-mdi-alarm" class="text-2xl text-red"></yyg-icon>
+      <yyg-icon icon="i-logos-vue" class="text-2xl text-red"></yyg-icon>
+
+      <h4>Iconify</h4>
+      <yyg-icon
+        type="iconify"
+        icon="mdi:home"
+        class="cursor-pointer text-3xl text-green"
+      ></yyg-icon>
+
       <h4>svg</h4>
       <yyg-icon type="svg" icon="beisi" class="h-10 w-10 color-blue"></yyg-icon>
       <yyg-icon type="svg" icon="jita" class="h-10 w-10 color-blue"></yyg-icon>
