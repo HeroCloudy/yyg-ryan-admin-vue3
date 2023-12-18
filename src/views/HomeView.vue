@@ -17,5 +17,11 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <!-- Twemoji of laugh, turns to tear on hovering -->
     <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
     <yyg-demo msg="hello"></yyg-demo>
+
+    <div>
+      <h2>Icon Demo</h2>
+      <yyg-icon icon="beisi" class="h-10 w-10 color-blue"></yyg-icon>
+      <yyg-icon icon="jita" class="h-10 w-10 color-blue"></yyg-icon>
+    </div>
   </main>
 </template>
