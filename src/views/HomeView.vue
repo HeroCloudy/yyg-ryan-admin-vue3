@@ -16,5 +16,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <button class="i-carbon-sun dark:i-carbon-moon" />
     <!-- Twemoji of laugh, turns to tear on hovering -->
     <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
+    <yyg-demo msg="hello"></yyg-demo>
   </main>
 </template>
