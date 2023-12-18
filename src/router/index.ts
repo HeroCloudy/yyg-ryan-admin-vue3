@@ -17,7 +17,12 @@ const constantRoutes: RouteRecordRaw[] = [
   {
     path: '/demo-icon-list',
     name: 'demo-icon-list',
-    component: () => import('@/views/icon-list-demo.vue')
+    component: () => import('@/views/icon/icon-list-demo.vue')
+  },
+  {
+    path: '/demo-icon-picker',
+    name: 'demo-icon-picker',
+    component: () => import('@/views/icon/icon-picker-demo.vue')
   }
 ]
 
