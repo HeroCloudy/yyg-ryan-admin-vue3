@@ -49,5 +49,10 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <el-button type="warning">Warning</el-button>
       <el-button type="danger">Danger</el-button>
     </el-row>
+
+    <div>
+      <h2>i18n</h2>
+      <div>{{ $t('app.desc') }}</div>
+    </div>
   </main>
 </template>
