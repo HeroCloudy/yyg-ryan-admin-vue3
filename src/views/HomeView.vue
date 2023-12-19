@@ -55,5 +55,10 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <div>{{ $t('app.desc') }}</div>
       <yyg-toggle-language></yyg-toggle-language>
     </div>
+
+    <div>
+      <h2>dark</h2>
+      <yyg-toggle-dark-mode></yyg-toggle-dark-mode>
+    </div>
   </main>
 </template>
