@@ -1,0 +1,16 @@
+@import "./config";
+
+:root {
+  --el-color-primary: var(--yyg-primary-color) !important;
+  --el-color-primary-light-3: #709B71 !important;
+}
+
+.default-icon {
+  color: #444040;
+}
+
+html[data-theme='dark'] {
+  .default-icon {
+    color: white;
+  }
+}

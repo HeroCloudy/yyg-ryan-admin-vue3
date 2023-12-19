@@ -6,6 +6,7 @@ import IconPicker from './icon-picker'
 import ToggleLanguage from './toggle-language'
 import ToggleDarkMode from './toggle-dark-mode'
 import 'virtual:svg-icons-register'
+import './scss/index.scss'
 
 const components: Component = [Demo, Icon, IconList, IconPicker, ToggleLanguage, ToggleDarkMode]
 

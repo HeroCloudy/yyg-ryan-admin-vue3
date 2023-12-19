@@ -1,0 +1,19 @@
+.login-form {
+  @apply w-full overflow-hidden;
+
+  .title {
+    @apply text-6 font-bold;
+  }
+
+  .login-form-container {
+    @apply mt-5;
+
+    .el-form-item {
+      //margin-top: 30px;
+
+      .form-item-icon {
+        @apply text-5;
+      }
+    }
+  }
+}
