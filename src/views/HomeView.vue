@@ -53,6 +53,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <div>
       <h2>i18n</h2>
       <div>{{ $t('app.desc') }}</div>
+      <yyg-toggle-language></yyg-toggle-language>
     </div>
   </main>
 </template>

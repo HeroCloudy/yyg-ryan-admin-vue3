@@ -4,8 +4,8 @@ import App from './App.vue'
 import { installAssets } from '@/plugins/assets'
 import { installRouter } from '@/router'
 import { installStore } from '@/stores'
-import { installCommonComponents } from '@/components/common'
-import { installI18n } from '@/lang'
+import { installCommonComponents, useAppInit } from '@/components/common'
+import i18n, { installI18n } from '@/lang'
 
 const bootstrapApp = () => {
   const app = createApp(App)
@@ -20,6 +20,9 @@ const bootstrapApp = () => {
   installAssets()
   // 国际化
   installI18n(app)
+
+  const { initApp } = useAppInit()
+  initApp(i18n)
 
   app.mount('#app')
 }
