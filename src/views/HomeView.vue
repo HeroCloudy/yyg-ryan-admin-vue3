@@ -64,5 +64,11 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <h2>full screen</h2>
       <yyg-toggle-full-screen></yyg-toggle-full-screen>
     </div>
+    <div>
+      <h2>Notification</h2>
+      <yyg-notification value="100111" :scale="0.5"></yyg-notification>
+      <yyg-notification value="100111" :scale="1"></yyg-notification>
+      <yyg-notification value="100111" :scale="1.5"></yyg-notification>
+    </div>
   </main>
 </template>
