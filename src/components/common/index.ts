@@ -7,6 +7,7 @@ import ToggleLanguage from './toggle-language'
 import ToggleDarkMode from './toggle-dark-mode'
 import ToggleFullScreen from './toggle-full-screen'
 import Notification from './notification'
+import Notice from './notice'
 import 'virtual:svg-icons-register'
 import './scss/index.scss'
 
@@ -18,7 +19,8 @@ const components: Component = [
   ToggleLanguage,
   ToggleDarkMode,
   ToggleFullScreen,
-  Notification
+  Notification,
+  Notice
 ]
 
 export const installCommonComponents = (app: App) => {
