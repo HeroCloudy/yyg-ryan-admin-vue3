@@ -5,10 +5,19 @@ import IconList from './icon-list'
 import IconPicker from './icon-picker'
 import ToggleLanguage from './toggle-language'
 import ToggleDarkMode from './toggle-dark-mode'
+import ToggleFullScreen from './toggle-full-screen'
 import 'virtual:svg-icons-register'
 import './scss/index.scss'
 
-const components: Component = [Demo, Icon, IconList, IconPicker, ToggleLanguage, ToggleDarkMode]
+const components: Component = [
+  Demo,
+  Icon,
+  IconList,
+  IconPicker,
+  ToggleLanguage,
+  ToggleDarkMode,
+  ToggleFullScreen
+]
 
 export const installCommonComponents = (app: App) => {
   const { VITE_COMPONENT_LIB_PREFIX } = import.meta.env

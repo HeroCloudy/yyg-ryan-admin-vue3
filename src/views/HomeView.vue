@@ -60,5 +60,9 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <h2>dark</h2>
       <yyg-toggle-dark-mode></yyg-toggle-dark-mode>
     </div>
+    <div>
+      <h2>full screen</h2>
+      <yyg-toggle-full-screen></yyg-toggle-full-screen>
+    </div>
   </main>
 </template>
